@@ -238,6 +238,42 @@ Total Sum = 15
 ```
 
 ────────
+## 📊 Program Flowchart
+
+```mermaid
+flowchart TD
+    A([🧠 Logic Box Starts]) --> B[📋 Display Main Menu]
+    B --> C{🔢 Enter Choice}
+
+    C -->|1| D[⭐ Pattern Generator]
+    D --> D1[⌨️ Enter Number of Rows]
+    D1 --> D2[🔄 Nested For Loop]
+    D2 --> D3[✨ Generate Star Pattern]
+    D3 --> B
+
+    C -->|2| E[🔢 Number Analyzer]
+    E --> E1[⌨️ Enter Starting Number]
+    E1 --> E2[⌨️ Enter Ending Number]
+    E2 --> E3[🔄 Process Each Number]
+
+    E3 --> E4{Number % 2 == 0?}
+    E4 -->|Yes| E5[🟢 Display Even]
+    E4 -->|No| E6[🟠 Display Odd]
+
+    E5 --> E7[➕ Calculate Total Sum]
+    E6 --> E7
+    E7 --> E8[📊 Display Total Sum]
+    E8 --> B
+
+    C -->|3| F([🚪 Exit Program])
+
+    C -->|Invalid| G[⚠️ Invalid Choice]
+    G --> B
+```
+
+    
+
+______________
 
 📸 Output
 
